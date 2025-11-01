@@ -3335,3 +3335,67 @@
         .hidden {
             display: none;
         }
+
+        /* ===== COFFEE TABLE SECTION ===== */
+        .coffee-table-section {
+            background: linear-gradient(135deg, #FAEBD7 0%, #F5F5DC 100%);
+            padding-top: 80px;
+            padding-bottom: 60px;
+            position: relative;
+        }
+
+        .coffee-table-header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .coffee-table-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 52px;
+            font-weight: 600;
+            color: #4A1C6A;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+        }
+
+        .coffee-table-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: #6B5B7F;
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .header-divider {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #D4AF37, #4A1C6A);
+            margin: 20px auto 0;
+            border-radius: 2px;
+            animation: slideInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
